@@ -8,4 +8,5 @@ import { Component } from '@angular/core'
 export class AppComponent {
   /** toggle sidenav open/close */
   public openSidenav = false
+
 }

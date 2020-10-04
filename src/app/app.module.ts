@@ -16,7 +16,9 @@ import { ReadComponent } from './questions/read/read.component'
 import { UsersComponent } from './users/users.component'
 import { ProfileComponent } from './users/profile/profile.component'
 import { TagsComponent } from './tags/tags.component'
-import { WelcomeComponent } from './welcome/welcome.component'
+import { WelcomeComponent } from './welcome/welcome.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { HeaderComponent } from './navigation/header/header.component'
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { WelcomeComponent } from './welcome/welcome.component'
     ProfileComponent,
     TagsComponent,
     WelcomeComponent,
+    SidenavListComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
