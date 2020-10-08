@@ -1,3 +1,21 @@
-<p>
-  questions works!
-</p>
+<div class="container">
+  <h2>All Questions</h2>
+  <p>2,123,123 questions</p>
+  <div>
+    <button mat-flat-button color="link">Newest</button>
+    <button mat-flat-button color="link">Active</button>
+    <button mat-flat-button color="link">Unanswared</button>
+    <button mat-flat-button color="link">More &or;</button>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end">
+      <button mat-flat-button color="link">Filter</button>
+    </div>
+  </div>
+  <div class="question-list">
+    <app-question></app-question>
+    <app-question></app-question>
+    <app-question></app-question>
+    <app-question></app-question>
+    <app-question></app-question>
+    <app-question></app-question>
+  </div>
+</div>

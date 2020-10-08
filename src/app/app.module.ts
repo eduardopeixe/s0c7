@@ -18,7 +18,8 @@ import { ProfileComponent } from './users/profile/profile.component'
 import { TagsComponent } from './tags/tags.component'
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
-import { HeaderComponent } from './navigation/header/header.component'
+import { HeaderComponent } from './navigation/header/header.component';
+import { QuestionComponent } from './questions/question/question.component'
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { HeaderComponent } from './navigation/header/header.component'
     WelcomeComponent,
     SidenavListComponent,
     HeaderComponent,
+    QuestionComponent,
   ],
   imports: [
     BrowserModule,
