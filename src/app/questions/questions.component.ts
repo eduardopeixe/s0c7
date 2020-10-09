@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionsComponent implements OnInit {
 
+  public questionCount: number = 123123
+
   constructor() { }
 
   ngOnInit() {

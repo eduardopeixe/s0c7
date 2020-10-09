@@ -1,17 +1,25 @@
-<div class="container" fxFlex fxLayout>
-  <div class="left-panel">
-    <p>0 votes</p>
-    <p>0 answers</p>
-    <p>0 views</p>
+<div class="container" fxFlex fxLayout fxLayoutAlign="center">
+  <div class="left-panel" fxFlex fxLayout fxLayoutAlign="center center" fxLayoutGap="10px">
+    <div class="votes">
+      <div class="vote-count">{{ voteCount | number }}</div>
+      <div>votes</div>
+    </div>
+    <div class="answers">
+      <div class="answer-count">{{ answerCount | number }}</div>
+      <div>answers</div>
+    </div>
+    <div class="views">
+      <div class="views-count">{{ viewCount | number }}</div>
+      <div>views</div>
+    </div>
   </div>
   <div class="right-panel">
-    <h1>Question Title</h1>
-    <p>This is the question loren ipsum This is the question loren ipsumThis is the question loren ipsum</p>
-    <p>tags tags tags</p>
+    <h1>{{ title }}</h1>
+    <p>{{ body }}</p>
+    <p>{{ tags }}</p>
   </div>
   <div class="bottom-panel">
-    <p>Asked 1000 time ago</p>
+    <p>Asked {{ convertUnixToDuration(this.when) }}</p>
     <h1>Avatar</h1>
     <p>Username</p>
-
 </div>

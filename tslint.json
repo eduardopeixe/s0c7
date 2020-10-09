@@ -1,9 +1,10 @@
 {
   "extends": [
     "tslint-configs/base/tslint-5.7.0.json",
-    "tslint-configs/extensions/angular/6.0.0/main.json"
+    "tslint-configs/extensions/angular/7.0.0/main.json"
   ],
   "linterOptions": {
     "exclude": ["projects/phoenix-dependency/accounts-api/src/generated/**"]
-  }
+  },
+  "no-unused-variable": true
 }

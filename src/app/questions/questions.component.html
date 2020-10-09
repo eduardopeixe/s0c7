@@ -1,21 +1,26 @@
-<div class="container">
-  <h2>All Questions</h2>
-  <p>2,123,123 questions</p>
-  <div>
-    <button mat-flat-button color="link">Newest</button>
-    <button mat-flat-button color="link">Active</button>
-    <button mat-flat-button color="link">Unanswared</button>
-    <button mat-flat-button color="link">More &or;</button>
-    <div fxFlex fxLayout fxLayoutAlign="flex-end">
-      <button mat-flat-button color="link">Filter</button>
+<div class="questions-container" fxFlex fxLayout="column" fxLayoutGap="10px">
+  <div class="header-top-panel" fxFlex fxLayout="row">
+    <div class="questions-title">All Questions</div>
+    <div class="questions-ask" fxFlex fxLayoutAlign="flex-end">
+      <button mat-flat-button class="ask-button" >Ask Question</button>
     </div>
   </div>
-  <div class="question-list">
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
+  <div class="header-bottom-panel">
+    <div class="questions-count">{{ questionCount | number }} <span>questions</span></div>
+    <div class="filter-buttons" fxFlex fxLayout>
+      <button mat-flat-button color="link">Newest</button>
+      <button mat-flat-button color="link">Active</button>
+      <button mat-flat-button color="link">Unanswared</button>
+      <button mat-flat-button color="link">More &or;</button>
+      <div fxFlex fxLayout fxLayoutAlign="flex-end">
+        <button mat-flat-button color="link">Filter</button>
+      </div>
+    </div>
+  </div>
+  <div class="questions">
+    <app-question-summary></app-question-summary>
+    <app-question-summary></app-question-summary>
+    <app-question-summary></app-question-summary>
+    <app-question-summary></app-question-summary>
   </div>
 </div>

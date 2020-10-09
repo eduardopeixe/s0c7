@@ -19,7 +19,15 @@ import { TagsComponent } from './tags/tags.component'
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { HeaderComponent } from './navigation/header/header.component';
-import { QuestionComponent } from './questions/question/question.component'
+import { QuestionComponent } from './questions/question/question.component';
+import { QuestionSummaryComponent } from './questions/question-summary/question-summary.component';
+import { VotecellComponent } from './questions/votecell/votecell.component';
+import { PostcellComponent } from './questions/postcell/postcell.component';
+import { CommentcellComponent } from './questions/commentcell/commentcell.component';
+import { StatuscellComponent } from './questions/question-summary/statuscell/statuscell.component';
+import { QuestioncellComponent } from './questions/question-summary/questioncell/questioncell.component';
+import { TagcellComponent } from './questions/question-summary/tagcell/tagcell.component';
+import { AvatarcellComponent } from './questions/question-summary/avatarcell/avatarcell.component'
 
 @NgModule({
   declarations: [
@@ -37,6 +45,14 @@ import { QuestionComponent } from './questions/question/question.component'
     SidenavListComponent,
     HeaderComponent,
     QuestionComponent,
+    QuestionSummaryComponent,
+    VotecellComponent,
+    PostcellComponent,
+    CommentcellComponent,
+    StatuscellComponent,
+    QuestioncellComponent,
+    TagcellComponent,
+    AvatarcellComponent,
   ],
   imports: [
     BrowserModule,
